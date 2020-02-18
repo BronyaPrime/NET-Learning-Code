@@ -21,16 +21,22 @@ namespace Method
             Type = ".net系列";
         }
 
+        public Course(int courseId, string courseName)
+        {
+            CourseId = courseId;
+            CourseName = courseName;
+        }
+
         public Course(int courseId, string courseName, string type):this(courseId,courseName)
         {
             this.Type = type;
         }
 
-        public int CourseId { get; set; };
+        public int CourseId { get; set; }
 
-        public string CourseName { get; set; };
+        public string CourseName { get; set; }
 
-        public string Type { get; set; };
+        public string Type { get; set; }
 
         public string ShowCourseInfo()
         {
@@ -42,16 +48,29 @@ namespace Method
 
     class TestClass
     {
-
         public void Dowork1()
         {
             //创建一个对象
             Course course = new Course();
             //获取对象的数据
-            Console.WriteLine(course.Type);
-            //调用对象的方法
-            string info = course.ShowCourseInfo();
-            Console.WriteLine(info);
+            Console.WriteLine("【无参构造方法】" + course.ShowCourseInfo());
+
+            course = new Course(10002, "C#面向对象编程");
+            //获取对象的数据
+            Console.WriteLine("【2个参数构造方法】" + course.ShowCourseInfo());
+
+            course = new Course(10003, "C#面向对象编程", ".net开发系列");
+            Console.WriteLine("【3个参数构造方法】" + course.ShowCourseInfo());
+        }
+
+        public void Dowork2()
+        {
+            //创建一个对象
+            Course course = new Course {
+                CourseId=32423,
+                CourseName="C#学习",
+                Type=".net学习"
+            };
         }
     }
 }

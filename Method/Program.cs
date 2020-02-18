@@ -10,6 +10,9 @@ namespace Method
     {
         static void Main(string[] args)
         {
+            TestClass testClass = new TestClass();
+            testClass.Dowork1();
+            Console.ReadLine();
         }
     }
 }
