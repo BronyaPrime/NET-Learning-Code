@@ -16,7 +16,7 @@ namespace Property
 
         public string CourseName;
 
-        private int UnitPrice = 4000;
+        private readonly int UnitPrice = 4000;
 
         public string Type = ".net系列";
 
@@ -36,10 +36,12 @@ namespace Property
       
         public void Dowork1() {
             //创建一个对象
-            Course course = new Course();
-            //赋值
-            course.CourseId = 12345;
-            course.CourseName = ".net全栈开发课程 ";
+            Course course = new Course
+            {
+                //赋值
+                CourseId = 12345,
+                CourseName = ".net全栈开发课程 "
+            };
             //获取对象的数据
             Console.WriteLine(course.Type);
             //调用对象的方法
