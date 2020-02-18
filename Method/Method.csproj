@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5D1CAC6-3859-4CA8-BF24-29228F2FDD98}</ProjectGuid>
+    <ProjectGuid>{474812DA-A276-484D-95A3-2149AB6DFD64}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Property</RootNamespace>
-    <AssemblyName>Property</AssemblyName>
+    <RootNamespace>Method</RootNamespace>
+    <AssemblyName>Method</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.类与对象的基本使用\Course.cs" />
-    <Compile Include="2.PropertyApp\Course1.cs" />
-    <Compile Include="2.PropertyApp\Course2.cs" />
+    <Compile Include="1.Constructor\Course.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

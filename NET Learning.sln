@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property", "Property\Proper
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP.02.Method", "OOP.02.Method", "{AD1E184B-8E2F-4B14-8618-C1F4662D708D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method", "Method\Method.csproj", "{474812DA-A276-484D-95A3-2149AB6DFD64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,12 +57,17 @@ Global
 		{B5D1CAC6-3859-4CA8-BF24-29228F2FDD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D1CAC6-3859-4CA8-BF24-29228F2FDD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D1CAC6-3859-4CA8-BF24-29228F2FDD98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{474812DA-A276-484D-95A3-2149AB6DFD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474812DA-A276-484D-95A3-2149AB6DFD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474812DA-A276-484D-95A3-2149AB6DFD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474812DA-A276-484D-95A3-2149AB6DFD64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B5D1CAC6-3859-4CA8-BF24-29228F2FDD98} = {EA350493-7104-422C-8835-032BF25C911C}
+		{474812DA-A276-484D-95A3-2149AB6DFD64} = {AD1E184B-8E2F-4B14-8618-C1F4662D708D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F4B00CA-67BE-4DED-8659-D4BE4C3C5735}
