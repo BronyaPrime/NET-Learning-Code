@@ -10,9 +10,11 @@ namespace Property
     {
         static void Main(string[] args)
         {
-            TestClass testClass = new TestClass();
-            testClass.Dowork1();
-            Console.ReadLine();
+            //TestClass testClass = new TestClass();
+            //testClass.Dowork1();
+            //Console.ReadLine();
+
+
         }
     }
 }
