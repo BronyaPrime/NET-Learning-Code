@@ -26,7 +26,10 @@ namespace Charpter4
             //Test06();
             //Test06_1();
             //Test07();
-            Test08();
+            //Test08();
+            //Test09();
+            //Test10();
+            //Test11();
             Console.ReadLine();
 
         }
@@ -145,8 +148,53 @@ namespace Charpter4
         }
         #endregion
 
-        #region 数组
+        #region 使用数组
+        public static void Test09() {
+            //创建数组的三种方式
+            int[] netScore1= new int[3] { 67,89,78 };
+            int[] netScore2 = new int[] { 67, 89, 78 };
+            int[] netScore3 = { 67, 89, 78 };
 
+
+            int[] netScore = new int[] { 67, 89, 78,54,34 };
+            int sumScore = 0;
+            for (int i = 0; i < netScore.Length; i++)
+            {
+                sumScore += netScore[i];
+            }
+            int aveScore = sumScore / netScore.Length;
+            Console.WriteLine($"学员的平均成绩={aveScore}");
+        }
+        #endregion
+
+        #region 使用foreach循环遍历数组
+        public static void Test10()
+        {
+            int[] netScore = new int[] { 67, 89, 78, 54, 34 };
+            int sumScore = 0;
+            //使用foreach循环遍历数组(var C#3.0 推断类型)
+            foreach (int score in netScore)
+            {
+                sumScore += score;
+            }
+            int aveScore = sumScore / netScore.Length;
+            Console.WriteLine($"学员的平均成绩={aveScore}");
+        }
+        #endregion
+
+        #region 字符串的相关处理
+        public static void Test11() {
+            string name1 = "x i a o w a n g";
+            string[] letterArray = name1.Split();
+
+            //使用逗号分隔字符串
+            string name2 = "小王,小刘,小江";
+            string[] nameList = name2.Split(',');
+
+            string name3 = string.Join("_", nameList);
+            Console.WriteLine(letterArray.Length);
+            Console.WriteLine(name3);
+        }
         #endregion
     }
 }
