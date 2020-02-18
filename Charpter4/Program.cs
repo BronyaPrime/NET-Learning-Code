@@ -228,7 +228,7 @@ namespace Charpter4
         {
             string teacherName = "常老师";
             string course =".net全栈开发课程和C#上位机课程";
-            string newTeacher = teacherName;.//string 是引用类型但是被NET做了特殊处理，效果和值类型一样
+            string newTeacher = teacherName;//string 是引用类型但是被NET做了特殊处理，效果和值类型一样
             teacherName = "jimes";
             Console.WriteLine($"TeacherName={teacherName},newTeacher={teacherName},course：{course}");
         }
