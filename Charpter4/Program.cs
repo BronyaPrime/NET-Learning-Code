@@ -30,6 +30,9 @@ namespace Charpter4
             //Test09();
             //Test10();
             //Test11();
+            //Test13();
+            //Test14();
+            Test15();
             Console.ReadLine();
 
         }
@@ -194,6 +197,40 @@ namespace Charpter4
             string name3 = string.Join("_", nameList);
             Console.WriteLine(letterArray.Length);
             Console.WriteLine(name3);
+        }
+        #endregion
+
+        #region 值类型变量
+        public static void Test13() {
+            int wangScore = 90;
+            int zhangScore = wangScore;
+            Console.WriteLine($"修改前二人成绩如下：小王成绩：{wangScore},小张：{zhangScore}");
+            zhangScore += 5;
+            Console.WriteLine($"修改后二人成绩如下：小王成绩：{wangScore},小张：{zhangScore}");
+        }
+        #endregion
+
+        #region 引用类型变量
+        public static void Test14()
+        {
+            int[] Score = { 90, 90 };
+        
+            Console.WriteLine($"修改前二人成绩如下：小王成绩：{Score[0]},小张：{Score[1]}");
+            int[] Score2 = Score;
+           Score[1] += 5;
+            Console.WriteLine($"修改后Score二人成绩如下：小王成绩：{Score[0]},小张：{Score[1]}");
+            Console.WriteLine($"修改后Score2二人成绩如下：小王成绩：{Score2[0]},小张：{Score2[1]}");
+        }
+        #endregion
+
+        #region 字符串作为引用类型变量的测试
+        public static void Test15()
+        {
+            string teacherName = "常老师";
+            string course =".net全栈开发课程和C#上位机课程";
+            string newTeacher = teacherName;.//string 是引用类型但是被NET做了特殊处理，效果和值类型一样
+            teacherName = "jimes";
+            Console.WriteLine($"TeacherName={teacherName},newTeacher={teacherName},course：{course}");
         }
         #endregion
     }
