@@ -11,7 +11,15 @@ namespace Method
         static void Main(string[] args)
         {
             TestClass testClass = new TestClass();
-            testClass.Dowork1();
+            //testClass.Dowork1();
+            //Console.ReadLine();
+
+            //testClass.Dowork2();
+            //Console.ReadLine();
+
+            TestClass2 testClass2 = new TestClass2();
+            testClass2.Dowork1();
+            testClass2.Dowork2();
             Console.ReadLine();
         }
     }

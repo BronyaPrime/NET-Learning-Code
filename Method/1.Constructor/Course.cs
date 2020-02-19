@@ -44,6 +44,9 @@ namespace Method
             return info;
         }
 
+        ~Course() {
+            Console.WriteLine("析构函数被调用");
+        }
     }
 
     class TestClass
@@ -71,6 +74,10 @@ namespace Method
                 CourseName="C#学习",
                 Type=".net学习"
             };
+
+            course = null;
+
+         //   GC.Collect(); //虚拟机帮我们完成
         }
     }
 }
